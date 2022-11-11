@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    
+    ym(91078127, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/91078127" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+ 
+    <!-- Другие кодировки плохо поддерживаются или имеют дыры -->
+    <meta charset="UTF-8">
+    <!-- Режим работы Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Для мобилок -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTs -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- META-ТЕГИ ДЛЯ ПОИСКОВИКОВ -->
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="" />
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/icons/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./img/icons/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./img/icons/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="./img/icons/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>EpsilonMetrics превращает геоданные в умные идеи</title>
+</head>
+
+<body>
+
+<!-------------- HEADER -------------->
+
+<header class="header">
+    <img class="header__bg" src="./img/header/bg.png" alt="header__bg">
+    <!-- <video class="header__video" playsinline autoplay loop muted poster="./img/poster-video.png">
+        <source src="./video/header_bg.mp4" type='video/mp4'>
+        WARNING: Your browser does not support the video tag!
+    </video> -->
+    <div class="container">
+        <!-- NAV -->
+        <div class="header-nav">
+            <a class="header-nav__logo" href="https://epsilonmetrics.ru/">
+                <img src="./img/logo.png" alt="logo">
+            </a>
+            <nav class="header-nav__nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <span class="nav-item__text">Платформа</span>
+                        <div class="navbar__dropdown">
+                            <div class="dropdown__section">
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-item">
+                                      <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/platform/">
+                                        <div class="dropdown-item__ico"> 
+                                          <img src="./img/icons/menu/platform/techo.svg" alt="menu__item">
+                                        </div> 
+                                        <span class="dropdown-item__text"> Технология </span>
+                                      </a> 
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/data-catalog/">
+                                          <div class="dropdown-item__ico"> 
+                                            <img src="./img/icons/menu/platform/data.svg" alt="menu__item">
+                                          </div> 
+                                          <span class="dropdown-item__text"> Данные </span>
+                                        </a> 
+                                      </li>
+                                      <li class="dropdown-item">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/services/">
+                                          <div class="dropdown-item__ico"> 
+                                            <img src="./img/icons/menu/platform/service.svg" alt="menu__item">
+                                          </div> 
+                                          <span class="dropdown-item__text"> Сервисы </span>
+                                        </a> 
+                                      </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-item__text">Решения</span>
+                        <div class="navbar__dropdown navbar__dropdown_flex">
+                            <div class="dropdown__tab">
+                                <ul class="tab__list">
+                                    <li class="tab__item">
+                                        <a class="tab__link active" href="#tab-industry" data-tab="tab-industry">
+                                            <span>По</span>
+                                            <span>Отрасли</span>
+                                        </a>
+                                    </li>
+                                    <li class="tab__item">
+                                        <a class="tab__link" href="#tab-use" data-tab="tab-use">
+                                            <span>По</span>
+                                            <span>Сценарию использования</span>
+                                        </a>
+                                    </li>
+                                    <li class="tab__item">
+                                        <a class="tab__link" href="#tab-role" data-tab="tab-role">
+                                            <span>По</span>
+                                            <span>Роли</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown__section dropdown__section_tab active" id="tab-industry">
+                                <ul class="dropdown-list dropdown-list_flex">
+                                    <li class="dropdown-item dropdown-item_flex">
+                                      <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/industries/cities-government/">
+                                        <div class="dropdown-item__ico"> 
+                                          <img src="./img/icons/menu/solutions/industry/city.svg" alt="menu__item">
+                                        </div> 
+                                        <span class="dropdown-item__text"> Города и правительство </span>
+                                      </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/industries/environmental-and-natural-resources/">
+                                          <div class="dropdown-item__ico"> 
+                                            <img src="./img/icons/menu/solutions/industry/wood.svg" alt="menu__item">
+                                          </div> 
+                                          <span class="dropdown-item__text"> Окружающая среда </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/industries/marketing-and-advertising/">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/solutions/industry/marketing.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Маркетинг и реклама </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/industries/telecommunications/">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/solutions/industry/tele.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Телекоммуникации </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/industries/financial-services/">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/solutions/industry/money.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Финансовые услуги </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/industries/healthcare-and-pharma/">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/solutions/industry/health.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Здоровье и фармацевтика </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/industries/real-estate/">
+                                          <div class="dropdown-item__ico"> 
+                                            <img src="./img/icons/menu/solutions/industry/house.svg" alt="menu__item">
+                                          </div> 
+                                          <span class="dropdown-item__text"> Недвижимость </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/industries/transport/">
+                                          <div class="dropdown-item__ico"> 
+                                            <img src="./img/icons/menu/solutions/industry/car.svg" alt="menu__item">
+                                          </div> 
+                                          <span class="dropdown-item__text"> Транспорт </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/industries/consumer-goods/">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/solutions/industry/cart.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Потребительские товары </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/industries/logistics/">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/solutions/industry/location.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Логистика </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/industries/retail/">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/solutions/industry/trading.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Розничная торговля </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/industries/utilities/">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/solutions/industry/pay.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Коммунальные услуги </span>
+                                        </a> 
+                                    </li>
+                                </ul>
+                                <a class="btn_tab btn" href="https://epsilonmetrics.ru/industries/">
+                                    <span>ВСЕ ОТРАСЛИ</span>
+                                </a>
+                            </div>
+                            <div class="dropdown__section dropdown__section_tab" id="tab-use">
+                                <ul class="dropdown-list dropdown-list_flex">
+                                    <li class="dropdown-item dropdown-item_flex">
+                                      <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/site-selection/">
+                                        <div class="dropdown-item__ico"> 
+                                          <img src="./img/icons/menu/solutions/use/map_location.svg" alt="menu__item">
+                                        </div> 
+                                        <span class="dropdown-item__text"> Выбор площадки </span>
+                                      </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/healthcare-analytics/">
+                                          <div class="dropdown-item__ico"> 
+                                            <img src="./img/icons/menu/solutions/use/med.svg" alt="menu__item">
+                                          </div> 
+                                          <span class="dropdown-item__text"> Медицинская аналитика </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/geomarketing/">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/solutions/use/location_arrow.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Геомаркетинг </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/indoor-mapping/">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/solutions/use/card.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Картографирование помещений </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/supply-chain-optimization/">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/solutions/use/document.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Оптимизация цепочек поставок </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/iot-analytics/">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/solutions/use/analytics.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Аналитика Интернета вещей </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/catastrophe-modeling/">
+                                          <div class="dropdown-item__ico"> 
+                                            <img src="./img/icons/menu/solutions/use/model.svg" alt="menu__item">
+                                          </div> 
+                                          <span class="dropdown-item__text"> Моделирование катастроф </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/network-deployment/">
+                                          <div class="dropdown-item__ico"> 
+                                            <img src="./img/icons/menu/solutions/use/content-network.svg" alt="menu__item">
+                                          </div> 
+                                          <span class="dropdown-item__text"> Развертывание сети </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/data-monetization/">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/solutions/use/data.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Монетизация данных </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/territory-planning/">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/solutions/use/plan.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Планировка территории </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/environmental-management/">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/solutions/use/wood.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Управление окружающей средой </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/real-estate-market-analysis/">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/solutions/use/building.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Анализ рынка недвижимости  </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/fraud-detection /">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/solutions/use/mask.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Обнаружение мошенничества </span>
+                                        </a> 
+                                    </li>
+                                </ul>
+                                <a class="btn_tab btn" href="https://epsilonmetrics.ru/solutions/">
+                                    <span>ВСЕ ВАРИАНТЫ ИСПОЛЬЗОВАНИЯ</span>
+                                </a>
+                            </div>
+                            <div class="dropdown__section dropdown__section_tab" id="tab-role">
+                                <ul class="dropdown-list dropdown-list_flex">
+                                    <li class="dropdown-item dropdown-item_flex">
+                                      <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/">
+                                        <div class="dropdown-item__ico"> 
+                                          <img src="./img/icons/menu/solutions/role/user-check.svg" alt="menu__item">
+                                        </div> 
+                                        <span class="dropdown-item__text"> Бизнес-пользователь </span>
+                                      </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                      <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/developer/">
+                                        <div class="dropdown-item__ico"> 
+                                          <img src="./img/icons/menu/solutions/role/array.svg" alt="menu__item">
+                                        </div> 
+                                        <span class="dropdown-item__text"> Разработчик </span>
+                                      </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/data-science/">
+                                          <div class="dropdown-item__ico"> 
+                                            <img src="./img/icons/menu/solutions/role/data-table.svg" alt="menu__item">
+                                          </div> 
+                                          <span class="dropdown-item__text"> Специалист по данным </span>
+                                        </a> 
+                                      </li>
+                                      <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/gis-software/">
+                                          <div class="dropdown-item__ico"> 
+                                            <img src="./img/icons/menu/solutions/role/world.svg" alt="menu__item">
+                                          </div> 
+                                          <span class="dropdown-item__text"> ГИС-профессионал </span>
+                                        </a> 
+                                      </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-item__text">Документация</span>
+                        <div class="navbar__dropdown">
+                            <div class="dropdown__section dropdown__section_pr-small">
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-item">
+                                      <a class="dropdown-item__link link_underline" href="https://docs.epsilonmetrics.ru/">
+                                        <div class="dropdown-item__ico"> 
+                                          <img src="./img/icons/menu/document/document.svg" alt="menu__item">
+                                        </div>
+                                        <div class="dropdown-item__text-wrapper">
+                                            <span class="dropdown-item__text"> Документация </span>
+                                            <p class="dropdown-item__description">Документация и ресурсы для максимально эффективного использования Epsilon</p>
+                                        </div>
+                                      </a> 
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-item__link link_underline" href="https://docs.epsilonmetrics.ru/tutorials/">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/document/metod.svg" alt="menu__item">
+                                            </div>
+                                            <div class="dropdown-item__text-wrapper">
+                                                <span class="dropdown-item__text"> Методические рекомендации </span>
+                                                <p class="dropdown-item__description">Пошаговые инструкции, чтобы быстро стать экспертом</p>
+                                            </div>
+                                        </a> 
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-item_empty">
+                        <a class="dropdown-item__link link_underline link_underline_main" href="https://epsilonmetrics.ru/pricing/">
+                            <span class="dropdown-item__text"> Цены </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-item__text">О компании</span>
+                        <div class="navbar__dropdown">
+                            <div class="dropdown__section">
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-item">
+                                      <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/blog/">
+                                        <div class="dropdown-item__ico"> 
+                                          <img src="./img/icons/menu/company/blog.svg" alt="menu__item">
+                                        </div> 
+                                        <span class="dropdown-item__text"> Блог </span>
+                                      </a> 
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/customer-stories/">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/company/stories.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Истории клиентов </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/careers/">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/company/career.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Карьера </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/about-us/">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/company/us.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> О нас </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/partners/">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/company/partners.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Партнерам </span>
+                                        </a> 
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-item_empty">
+                        <a class="btn header-nav__btn header-nav__btn_small header-nav__btn_orange" href="https://maps.epsilonmetrics.ru/signup/">
+                            <span>Попробовать бесплатно</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item_empty">
+                        <a class="btn header-nav__btn header-nav__btn_small" href="https://maps.epsilonmetrics.ru">
+                            <span>Войти</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!--********************************************************************** BURGER -->
+            <div class="burger">
+                <span class="burger__line"></span>
+            </div>
+            <div class="mobile__wrapper">
+                <nav class="mobile">
+                    <ul class="mobile__list">
+                        <li class="mobile__item">
+                            <div class="mobile-item__wrapper">
+                                <div class="mobile-item__select">
+                                    <span class="mobile-item__title">Платформа</span>
+                                    <div class="mobile-item__arrow">
+                                        <img src="./img/icons/arrow_select.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="mobile-item__collaps">
+                                    <ul class="mobile-item__list">
+                                        <li class="dropdown-item">
+                                            <a class="dropdown-item__link link_underline mobile__link" href="https://epsilonmetrics.ru/platform/">
+                                              <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/platform/techo.svg" alt="menu__item">
+                                              </div> 
+                                              <span class="dropdown-item__text"> Технология </span>
+                                            </a> 
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a class="dropdown-item__link link_underline mobile__link" href="https://epsilonmetrics.ru/data-catalog/ ">
+                                              <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/platform/data.svg" alt="menu__item">
+                                              </div> 
+                                              <span class="dropdown-item__text"> Данные </span>
+                                            </a> 
+                                          </li>
+                                          <li class="dropdown-item">
+                                            <a class="dropdown-item__link link_underline mobile__link" href="https://epsilonmetrics.ru/services/">
+                                              <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/platform/service.svg" alt="menu__item">
+                                              </div> 
+                                              <span class="dropdown-item__text"> Сервисы </span>
+                                            </a> 
+                                          </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mobile__item">
+                            <div class="mobile-item__wrapper">
+                                <div class="mobile-item__select">
+                                    <span class="mobile-item__title">Решения</span>
+                                    <div class="mobile-item__arrow">
+                                        <img src="./img/icons/arrow_select.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-3 mobile-item__collaps">
+                                    <div class="dropdown__tab">
+                                        <ul class="tab__list swiper-pagination">
+                                            <li class="tab__item">
+                                                <a class="tab__link active" href="#tab-industry-mobile" data-tab="tab-industry-mobile">
+                                                    <span>По</span>
+                                                    <span>Отрасли</span>
+                                                </a>
+                                            </li>
+                                            <li class="tab__item">
+                                                <a class="tab__link" href="#tab-use-mobile" data-tab="tab-use-mobile">
+                                                    <span>По</span>
+                                                    <span>Сценарию использования</span>
+                                                </a>
+                                            </li>
+                                            <li class="tab__item">
+                                                <a class="tab__link" href="#tab-role-mobile" data-tab="tab-role-mobile">
+                                                    <span>По</span>
+                                                    <span>Роли</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="swiper-wrapper dropdown__section_mobile">
+                                        <ul class="swiper-slide dropdown-list dropdown-list_flex" id="tab-industry-mobile">
+                                            <li class="dropdown-item dropdown-item_flex">
+                                              <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/industries/cities-government/">
+                                                <div class="dropdown-item__ico"> 
+                                                  <img src="./img/icons/menu/solutions/industry/city.svg" alt="menu__item">
+                                                </div> 
+                                                <span class="dropdown-item__text"> Города и правительство </span>
+                                              </a> 
+                                            </li>
+                                            <li class="dropdown-item dropdown-item_flex">
+                                                <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/industries/environmental-and-natural-resources/">
+                                                  <div class="dropdown-item__ico"> 
+                                                    <img src="./img/icons/menu/solutions/industry/wood.svg" alt="menu__item">
+                                                  </div> 
+                                                  <span class="dropdown-item__text"> Окружающая среда </span>
+                                                </a> 
+                                            </li>
+                                            <li class="dropdown-item dropdown-item_flex">
+                                                <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/industries/marketing-and-advertising/">
+                                                    <div class="dropdown-item__ico"> 
+                                                        <img src="./img/icons/menu/solutions/industry/marketing.svg" alt="menu__item">
+                                                    </div> 
+                                                    <span class="dropdown-item__text"> Маркетинг и реклама </span>
+                                                </a> 
+                                            </li>
+                                            <li class="dropdown-item dropdown-item_flex">
+                                                <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/industries/telecommunications/">
+                                                    <div class="dropdown-item__ico"> 
+                                                        <img src="./img/icons/menu/solutions/industry/tele.svg" alt="menu__item">
+                                                    </div> 
+                                                    <span class="dropdown-item__text"> Телекоммуникации </span>
+                                                </a> 
+                                            </li>
+                                            <li class="dropdown-item dropdown-item_flex">
+                                                <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/industries/financial-services/">
+                                                    <div class="dropdown-item__ico"> 
+                                                        <img src="./img/icons/menu/solutions/industry/money.svg" alt="menu__item">
+                                                    </div> 
+                                                    <span class="dropdown-item__text"> Финансовые услуги </span>
+                                                </a> 
+                                            </li>
+                                            <li class="dropdown-item dropdown-item_flex">
+                                                <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/industries/healthcare-and-pharma/">
+                                                    <div class="dropdown-item__ico"> 
+                                                        <img src="./img/icons/menu/solutions/industry/health.svg" alt="menu__item">
+                                                    </div> 
+                                                    <span class="dropdown-item__text"> Здоровье и фармацевтика </span>
+                                                </a> 
+                                            </li>
+                                            <li class="dropdown-item dropdown-item_flex">
+                                                <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/industries/real-estate/">
+                                                  <div class="dropdown-item__ico"> 
+                                                    <img src="./img/icons/menu/solutions/industry/house.svg" alt="menu__item">
+                                                  </div> 
+                                                  <span class="dropdown-item__text"> Недвижимость </span>
+                                                </a> 
+                                            </li>
+                                            <li class="dropdown-item dropdown-item_flex">
+                                                <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/industries/transport/">
+                                                  <div class="dropdown-item__ico"> 
+                                                    <img src="./img/icons/menu/solutions/industry/car.svg" alt="menu__item">
+                                                  </div> 
+                                                  <span class="dropdown-item__text"> Транспорт </span>
+                                                </a> 
+                                            </li>
+                                            <li class="dropdown-item dropdown-item_flex">
+                                                <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/industries/consumer-goods/">
+                                                    <div class="dropdown-item__ico"> 
+                                                        <img src="./img/icons/menu/solutions/industry/cart.svg" alt="menu__item">
+                                                    </div> 
+                                                    <span class="dropdown-item__text"> Потребительские товары </span>
+                                                </a> 
+                                            </li>
+                                            <li class="dropdown-item dropdown-item_flex">
+                                                <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/industries/logistics/">
+                                                    <div class="dropdown-item__ico"> 
+                                                        <img src="./img/icons/menu/solutions/industry/location.svg" alt="menu__item">
+                                                    </div> 
+                                                    <span class="dropdown-item__text"> Логистика </span>
+                                                </a> 
+                                            </li>
+                                            <li class="dropdown-item dropdown-item_flex">
+                                                <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/industries/retail/">
+                                                    <div class="dropdown-item__ico"> 
+                                                        <img src="./img/icons/menu/solutions/industry/trading.svg" alt="menu__item">
+                                                    </div> 
+                                                    <span class="dropdown-item__text"> Розничная торговля </span>
+                                                </a> 
+                                            </li>
+                                            <li class="dropdown-item dropdown-item_flex">
+                                                <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/industries/utilities/">
+                                                    <div class="dropdown-item__ico"> 
+                                                        <img src="./img/icons/menu/solutions/industry/pay.svg" alt="menu__item">
+                                                    </div> 
+                                                    <span class="dropdown-item__text"> Коммунальные услуги </span>
+                                                </a> 
+                                            </li>
+                                        </ul>
+                                        <ul class="swiper-slide dropdown-list dropdown-list_flex"  id="tab-use-mobile">
+                                            <li class="dropdown-item dropdown-item_flex">
+                                              <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/site-selection/">
+                                                <div class="dropdown-item__ico"> 
+                                                  <img src="./img/icons/menu/solutions/use/map_location.svg" alt="menu__item">
+                                                </div> 
+                                                <span class="dropdown-item__text"> Выбор площадки </span>
+                                              </a> 
+                                            </li>
+                                            <li class="dropdown-item dropdown-item_flex">
+                                                <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/healthcare-analytics/">
+                                                  <div class="dropdown-item__ico"> 
+                                                    <img src="./img/icons/menu/solutions/use/med.svg" alt="menu__item">
+                                                  </div> 
+                                                  <span class="dropdown-item__text"> Медицинская аналитика </span>
+                                                </a> 
+                                            </li>
+                                            <li class="dropdown-item dropdown-item_flex">
+                                                <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/geomarketing/">
+                                                    <div class="dropdown-item__ico"> 
+                                                        <img src="./img/icons/menu/solutions/use/location_arrow.svg" alt="menu__item">
+                                                    </div> 
+                                                    <span class="dropdown-item__text"> Геомаркетинг </span>
+                                                </a> 
+                                            </li>
+                                            <li class="dropdown-item dropdown-item_flex">
+                                                <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/indoor-mapping/">
+                                                    <div class="dropdown-item__ico"> 
+                                                        <img src="./img/icons/menu/solutions/use/card.svg" alt="menu__item">
+                                                    </div> 
+                                                    <span class="dropdown-item__text"> Картографирование помещений </span>
+                                                </a> 
+                                            </li>
+                                            <li class="dropdown-item dropdown-item_flex">
+                                                <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/supply-chain-optimization/">
+                                                    <div class="dropdown-item__ico"> 
+                                                        <img src="./img/icons/menu/solutions/use/document.svg" alt="menu__item">
+                                                    </div> 
+                                                    <span class="dropdown-item__text"> Оптимизация цепочек поставок </span>
+                                                </a> 
+                                            </li>
+                                            <li class="dropdown-item dropdown-item_flex">
+                                                <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/iot-analytics/">
+                                                    <div class="dropdown-item__ico"> 
+                                                        <img src="./img/icons/menu/solutions/use/analytics.svg" alt="menu__item">
+                                                    </div> 
+                                                    <span class="dropdown-item__text"> Аналитика Интернета вещей </span>
+                                                </a> 
+                                            </li>
+                                            <li class="dropdown-item dropdown-item_flex">
+                                                <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/catastrophe-modeling/">
+                                                  <div class="dropdown-item__ico"> 
+                                                    <img src="./img/icons/menu/solutions/use/model.svg" alt="menu__item">
+                                                  </div> 
+                                                  <span class="dropdown-item__text"> Моделирование катастроф </span>
+                                                </a> 
+                                            </li>
+                                            <li class="dropdown-item dropdown-item_flex">
+                                                <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/network-deployment/">
+                                                  <div class="dropdown-item__ico"> 
+                                                    <img src="./img/icons/menu/solutions/use/content-network.svg" alt="menu__item">
+                                                  </div> 
+                                                  <span class="dropdown-item__text"> Развертывание сети </span>
+                                                </a> 
+                                            </li>
+                                            <li class="dropdown-item dropdown-item_flex">
+                                                <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/data-monetization/">
+                                                    <div class="dropdown-item__ico"> 
+                                                        <img src="./img/icons/menu/solutions/use/data.svg" alt="menu__item">
+                                                    </div> 
+                                                    <span class="dropdown-item__text"> Монетизация данных </span>
+                                                </a> 
+                                            </li>
+                                            <li class="dropdown-item dropdown-item_flex">
+                                                <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/territory-planning/">
+                                                    <div class="dropdown-item__ico"> 
+                                                        <img src="./img/icons/menu/solutions/use/plan.svg" alt="menu__item">
+                                                    </div> 
+                                                    <span class="dropdown-item__text"> Планировка территории </span>
+                                                </a> 
+                                            </li>
+                                            <li class="dropdown-item dropdown-item_flex">
+                                                <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/environmental-management/">
+                                                    <div class="dropdown-item__ico"> 
+                                                        <img src="./img/icons/menu/solutions/use/wood.svg" alt="menu__item">
+                                                    </div> 
+                                                    <span class="dropdown-item__text"> Управление окружающей средой </span>
+                                                </a> 
+                                            </li>
+                                            <li class="dropdown-item dropdown-item_flex">
+                                                <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/real-estate-market-analysis/">
+                                                    <div class="dropdown-item__ico"> 
+                                                        <img src="./img/icons/menu/solutions/use/building.svg" alt="menu__item">
+                                                    </div> 
+                                                    <span class="dropdown-item__text"> Анализ рынка недвижимости  </span>
+                                                </a> 
+                                            </li>
+                                            <li class="dropdown-item dropdown-item_flex">
+                                                <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/fraud-detection /">
+                                                    <div class="dropdown-item__ico"> 
+                                                        <img src="./img/icons/menu/solutions/use/mask.svg" alt="menu__item">
+                                                    </div> 
+                                                    <span class="dropdown-item__text"> Обнаружение мошенничества </span>
+                                                </a> 
+                                            </li>
+                                        </ul>
+                                        <ul class="swiper-slide dropdown-list" id="tab-role-mobile">
+                                            <li class="dropdown-item dropdown-item_flex">
+                                              <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/">
+                                                <div class="dropdown-item__ico"> 
+                                                  <img src="./img/icons/menu/solutions/role/user-check.svg" alt="menu__item">
+                                                </div> 
+                                                <span class="dropdown-item__text"> Бизнес-пользователь </span>
+                                              </a> 
+                                            </li>
+                                            <li class="dropdown-item dropdown-item_flex">
+                                                <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/data-science/">
+                                                  <div class="dropdown-item__ico"> 
+                                                    <img src="./img/icons/menu/solutions/role/data-table.svg" alt="menu__item">
+                                                  </div> 
+                                                  <span class="dropdown-item__text"> Специалист по данным </span>
+                                                </a> 
+                                              </li>
+                                              <li class="dropdown-item dropdown-item_flex">
+                                                <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/developer/">
+                                                  <div class="dropdown-item__ico"> 
+                                                    <img src="./img/icons/menu/solutions/role/array.svg" alt="menu__item">
+                                                  </div> 
+                                                  <span class="dropdown-item__text"> Разработчик </span>
+                                                </a> 
+                                              </li>
+                                              <li class="dropdown-item dropdown-item_flex">
+                                                <a class="dropdown-item__link link_underline" href="https://epsilonmetrics.ru/solutions/gis-software/">
+                                                  <div class="dropdown-item__ico"> 
+                                                    <img src="./img/icons/menu/solutions/role/world.svg" alt="menu__item">
+                                                  </div> 
+                                                  <span class="dropdown-item__text"> ГИС-профессионал </span>
+                                                </a> 
+                                              </li>
+                                        </ul>
+                                    </div>
+                                    <a class="btn_tab btn btn_tab_mobile active" id="btn_tab_mobile-1" href="https://epsilonmetrics.ru/industries/">
+                                        <span>ВСЕ ОТРАСЛИ</span>
+                                    </a>
+                                    <a class="btn_tab btn btn_tab_mobile" id="btn_tab_mobile-2" href="https://epsilonmetrics.ru/solutions/">
+                                        <span>ВСЕ ВАРИАНТЫ ИСПОЛЬЗОВАНИЯ</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mobile__item">
+                            <div class="mobile-item__wrapper">
+                                <div class="mobile-item__select">
+                                    <span class="mobile-item__title">Документация</span>
+                                    <div class="mobile-item__arrow">
+                                        <img src="./img/icons/arrow_select.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="mobile-item__collaps">
+                                    <ul class="mobile-item__list">
+                                        <li class="dropdown-item">
+                                            <a class="dropdown-item__link link_underline mobile__link" href="https://docs.epsilonmetrics.ru/">
+                                              <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/document/document.svg" alt="menu__item">
+                                              </div> 
+                                              <span class="dropdown-item__text"> Документация </span>
+                                            </a> 
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a class="dropdown-item__link link_underline mobile__link" href="https://docs.epsilonmetrics.ru/tutorials/">
+                                              <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/document/metod.svg" alt="menu__item">
+                                              </div> 
+                                              <span class="dropdown-item__text"> Методические рекомендации </span>
+                                            </a> 
+                                          </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mobile__item">
+                            <div class="mobile-item__wrapper">
+                                <div class="mobile-item__select">
+                                    <span class="mobile-item__title">О компании</span>
+                                    <div class="mobile-item__arrow">
+                                        <img src="./img/icons/arrow_select.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="mobile-item__collaps">
+                                    <ul class="mobile-item__list">
+                                        <li class="dropdown-item">
+                                            <a class="dropdown-item__link link_underline mobile__link" href="https://epsilonmetrics.ru/blog/">
+                                              <div class="dropdown-item__ico"> 
+                                                <img src="./img/icons/menu/document/document.svg" alt="menu__item">
+                                              </div> 
+                                              <span class="dropdown-item__text"> Блог </span>
+                                            </a> 
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a class="dropdown-item__link link_underline mobile__link" href="https://epsilonmetrics.ru/customer-stories/">
+                                                <div class="dropdown-item__ico"> 
+                                                    <img src="./img/icons/menu/company/stories.svg" alt="menu__item">
+                                                </div> 
+                                                <span class="dropdown-item__text"> Истории клиентов </span>
+                                            </a> 
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a class="dropdown-item__link link_underline mobile__link" href="https://epsilonmetrics.ru/careers/">
+                                                <div class="dropdown-item__ico"> 
+                                                    <img src="./img/icons/menu/company/career.svg" alt="menu__item">
+                                                </div> 
+                                                <span class="dropdown-item__text"> Карьера </span>
+                                            </a> 
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a class="dropdown-item__link link_underline mobile__link" href="https://epsilonmetrics.ru/about-us/">
+                                                <div class="dropdown-item__ico"> 
+                                                    <img src="./img/icons/menu/company/us.svg" alt="menu__item">
+                                                </div> 
+                                                <span class="dropdown-item__text"> О нас </span>
+                                            </a> 
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a class="dropdown-item__link link_underline mobile__link" href="https://epsilonmetrics.ru/partners/">
+                                                <div class="dropdown-item__ico"> 
+                                                    <img src="./img/icons/menu/company/partners.svg" alt="menu__item">
+                                                </div> 
+                                                <span class="dropdown-item__text"> Партнерам </span>
+                                            </a> 
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="mobile__list-account">
+                        <li class="list-account__item">
+                            <a class="btn header-nav__btn" href="https://maps.epsilonmetrics.ru">
+                                <span>Войти</span>
+                            </a>
+                        </li>
+                        <li class="list-account__item">
+                            <a class="btn header-nav__btn header-nav__btn_orange header-nav__btn_mobile" href="https://maps.epsilonmetrics.ru/signup/">
+                                <span>Попробовать бесплатно</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- TOP -->
+        <div class="header__banner">
+            <h1 class="header__title">Пространственная аналитика для современного стека данных</h1>
+            <p class="header__subtitle">Ведущая облачная платформа Location Intelligence</p>
+            <a class="header__btn btn btn_yellow" href="https://maps.epsilonmetrics.ru/signup/">
+                <span>Попробовать бесплатно</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-------------- SLIDER -------------->
+
+<section class="slider">
+    <div class="container">
+        <ul class="slide-wrapper">
+            <!-- 1 -->
+            <li class="slide" id="slide">
+                <div class="slide__left">
+                    <h4 class="slide__subtitle">Нам доверяют лидеры</h4>
+                    <h3 class="slide__title">Проанализировано покрытие сетей связи для 3 миллионов пользователей</h3>
+                    <img class="slide__map" src="./img/slider/1/map.png" alt="map">
+                </div>
+                <div class="slide__right">
+                    <img class="slide__logo" src="./img/slider/1/slide_logo.png" alt="client_logo">
+                    <div class="slide__description">
+                        <p class="slide__text">«Благодаря широким возможностям облачной платформы Epsilon Metrics, мы смогли проанализировать качество покрытия сетями связи в Республике Крым и г. Севастополь, а также запланировать размещение телекоммуникационных башен в местах с недостаточным покрытием».</p>
+                        <p class="slide__caption">Константин Попов<br>Технический Директор КРИТ</p>
+                        <a class="slide__btn btn btn_yellow" href="https://epsilonmetrics.ru/customer-stories/crit-wireless/">
+                            <span>Посмотреть описание</span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <!-- 2 -->
+            <li class="slide" id="slide">
+                <div class="slide__left">
+                    <h4 class="slide__subtitle">Нам доверяют лидеры</h4>
+                    <h3 class="slide__title">Проанализировано покрытие сетей связи для 3 миллионов пользователей</h3>
+                    <img class="slide__map" src="./img/slider/2/map.png" alt="map">
+                </div>
+                <div class="slide__right">
+                    <img class="slide__logo" src="./img/slider/1/slide_logo.png" alt="client_logo">
+                    <div class="slide__description">
+                        <p class="slide__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus illum suscipit deserunt voluptatem dicta odit ut reprehenderit molestiae similique iusto nihil quis praesentium, facere odio, quo iure dolor accusantium accusantium accusantium accusantium iure dicta odit ut reprehenderit neque quaerat?</p>
+                        <p class="slide__caption">Константин Попов<br>Технический Директор КРИТ</p>
+                        <a class="slide__btn btn btn_yellow" href="https://epsilonmetrics.ru/customer-stories/crit-wireless/">
+                            <span>Посмотреть описание</span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <!-- 3 -->
+            <li class="slide" id="slide">
+                <div class="slide__left">
+                    <h4 class="slide__subtitle">Нам доверяют лидеры</h4>
+                    <h3 class="slide__title">Проанализировано покрытие сетей связи для 3 миллионов пользователей</h3>
+                    <img class="slide__map" src="./img/slider/3/map.png" alt="map">
+                </div>
+                <div class="slide__right">
+                    <img class="slide__logo" src="./img/slider/1/slide_logo.png" alt="client_logo">
+                    <div class="slide__description">
+                        <p class="slide__text">Delectus cum, eligendi asperiores deleniti molestiae ipsam enim impedit quas laborum a corrupti culpa voluptatibus est praesentium, numquam fugiat! Quam aut porro deleniti cum, hic rerum explicabo saepe consecte iure accusantium accusantium accusantium accusantium iure turdicta odit ut reprehenderit accusantium.</p>
+                        <p class="slide__caption">Константин Попов<br>Технический Директор КРИТ</p>
+                        <a class="slide__btn btn btn_yellow" href="https://epsilonmetrics.ru/customer-stories/crit-wireless/">
+                            <span>Посмотреть описание</span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="pagination">
+            <a class="pagination__arrow arrow__left" id="paginArrowL">
+                <img src="./img/slider/arrow.svg" alt="arrow__pag">
+            </a>
+            <a class="pagination__arrow arrow__right" id="paginArrowR">
+                <img src="./img/slider/arrow.svg" alt="arrow__pag">
+            </a>
+            <div class="pagination__title">
+                <span class="pagination__number" id="paginNum"></span>
+                 / 
+                <span class="pagination__total" id="paginTotal"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-------------- SLIDER-SWIPER -------------->
+
+<div class="container">
+    <section class="_slider">
+        <div class="_container swiper-2">
+            <ul class="_slide-wrapper swiper-wrapper">
+                <!-- 1 -->
+                <li class="_slide swiper-slide" id="slide">
+                    <div class="slide__left">
+                        <h4 class="slide__subtitle">Нам доверяют лидеры</h4>
+                        <h3 class="slide__title">Проанализировано покрытие сетей связи для 3 миллионов пользователей</h3>
+                        <img class="slide__map" src="./img/slider/1/map.png" alt="map">
+                    </div>
+                    <div class="slide__right">
+                        <img class="slide__logo" src="./img/slider/1/slide_logo.png" alt="client_logo">
+                        <div class="slide__description">
+                            <p class="slide__text">«Благодаря широким возможностям облачной платформы Epsilon Metrics, мы смогли проанализировать качество покрытия сетями связи в Республике Крым и г. Севастополь, а также запланировать размещение телекоммуникационных башен в местах с недостаточным покрытием».</p>
+                            <p class="slide__caption">Константин Попов<br>Технический Директор КРИТ</p>
+                            <a class="slide__btn btn btn_yellow" href="https://epsilonmetrics.ru/customer-stories/crit-wireless/">
+                                <span>Посмотреть описание</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <!-- 2 -->
+                <li class="_slide swiper-slide" id="slide">
+                    <div class="slide__left">
+                        <h4 class="slide__subtitle">Нам доверяют лидеры</h4>
+                        <h3 class="slide__title">Проанализировано покрытие сетей связи для 3 миллионов пользователей</h3>
+                        <img class="slide__map" src="./img/slider/2/map.png" alt="map">
+                    </div>
+                    <div class="slide__right">
+                        <img class="slide__logo" src="./img/slider/1/slide_logo.png" alt="client_logo">
+                        <div class="slide__description">
+                            <p class="slide__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus illum suscipit deserunt voluptatem dicta odit ut reprehenderit molestiae similique iusto nihil quis praesentium, facere odio, quo iure dolor neque quaerat?</p>
+                            <p class="slide__caption">Константин Попов<br>Технический Директор КРИТ</p>
+                            <a class="slide__btn btn btn_yellow" href="https://epsilonmetrics.ru/customer-stories/crit-wireless/">
+                                <span>Посмотреть описание</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <!-- 3 -->
+                <li class="_slide swiper-slide" id="slide">
+                    <div class="slide__left">
+                        <h4 class="slide__subtitle">Нам доверяют лидеры</h4>
+                        <h3 class="slide__title">Проанализировано покрытие сетей связи для 3 миллионов пользователей</h3>
+                        <img class="slide__map" src="./img/slider/3/map.png" alt="map">
+                    </div>
+                    <div class="slide__right">
+                        <img class="slide__logo" src="./img/slider/1/slide_logo.png" alt="client_logo">
+                        <div class="slide__description">
+                            <p class="slide__text">Delectus cum, eligendi asperiores deleniti molestiae ipsam enim impedit quas laborum a corrupti culpa voluptatibus est praesentium, numquam fugiat! Quam aut porro deleniti cum, hic rerum explicabo saepe consectetur accusantium.</p>
+                            <p class="slide__caption">Константин Попов<br>Технический Директор КРИТ</p>
+                            <a class="slide__btn btn btn_yellow" href="https://epsilonmetrics.ru/customer-stories/crit-wireless/">
+                                <span>Посмотреть описание</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            
+            <!-- If we need navigation buttons -->
+            <div class="_arrows">
+                <div class="swiper-button-prev">
+                    <img src="./img/slider/arrow.svg" alt="arrow__pag">
+                </div>
+                <div class="swiper-button-next">
+                    <img src="./img/slider/arrow.svg" alt="arrow__pag">
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section>
+</div>
+<!-------------- Benefits -------------->
+
+<section class="benefits">
+    <div class="container">
+        <div class="benefits__content">
+            <div class="content__info">
+                <h6 class="info__subtitle">Облачное решение</h6>
+                <h2 class="info__title">Откройте для себя преимущества облачных ГИС</h2>
+                <p class="info__text">Платформа Epsilon Metrics предлагает облачные, самостоятельные и гибридные развертывания, удовлетворяя потребности компаний любого размера.</p>
+                <a class="benefits__btn btn btn_yellow" href="https://epsilonmetrics.ru/platform/">
+                    <span>Узнать, как это работает</span>
+                </a>
+            </div>
+            <div class="content__img">
+                <img class="benefits__img" src="https://i1.sndcdn.com/artworks-000476107998-fqqgdc-t500x500.jpg" alt="">
+            </div>
+            <a class="benefits__btn_bottom btn btn_yellow" href="https://epsilonmetrics.ru/platform/">
+                <span>Узнать, как это работает</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-------------- ANALYSIS -------------->
+
+<section class="analysis">
+    <div class="container">
+        <div class="analysis__content">
+            <h2 class="analysis__title">Ускорьте пространственный анализ</h2>
+            <p class="analysis__text">Специалисты по обработке и анализу данных, разработчики и аналитики решают пространственные задачи, используя наши данные и анализ, чтобы понять, где и почему что-то происходит, оптимизировать бизнес-процессы и предсказать будущие результаты. Наша платформа поможет вам сделать это за 4 простых шага:</p>
+            <ul class="analysis__list">
+                <!-- 1 -->
+                <li class="list__item">
+                    <a class="item__link" href="https://epsilonmetrics.ru/platform/#connect">
+                        <div class="item__circle">1</div>
+                        <div class="item__ico">
+                            <img class="item__img" src="./img/icons/analysis/cloud.svg" alt="">
+                        </div>
+                        <h3 class="item__title">Подключение к облаку и интеграция</h3>
+                    </a>
+                </li>
+                <!-- 2 -->
+                <li class="list__item">
+                    <a class="item__link" href="https://epsilonmetrics.ru/platform/#access">
+                        <div class="item__circle">2</div>
+                        <div class="item__ico">
+                            <img class="item__img" src="./img/icons/analysis/data.svg" alt="">
+                        </div>
+                        <h3 class="item__title">Обогащение данных</h3>
+                    </a>
+                </li>
+                <!-- 3 -->
+                <li class="list__item">
+                    <a class="item__link" href="https://epsilonmetrics.ru/platform/#carry">
+                        <div class="item__circle">3</div>
+                        <div class="item__ico">
+                            <img class="item__img" src="./img/icons/analysis/analysis.svg" alt="">
+                        </div>
+                        <h3 class="item__title">Пространственный анализ</h3>
+                    </a>
+                </li>
+                <!-- 4 -->
+                <li class="list__item">
+                    <a class="item__link" href="https://epsilonmetrics.ru/platform/#build">
+                        <div class="item__circle">4</div>
+                        <div class="item__ico">
+                            <img class="item__img" src="./img/icons/analysis/visual.svg" alt="">
+                        </div>
+                        <h3 class="item__title">Решения и визуализация</h3>
+                    </a>
+                </li>
+            </ul>
+            <a class="analysis__btn btn btn_yellow" href="https://epsilonmetrics.ru/platform/">
+                <span>Узнать больше</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-------------- ACCESS-SWIPER -------------->
+
+<section class="swip-access">
+    <h2 class="swip-access__title">Доступ к наборам геопространственных данных</h2>
+    <p class="swip-access__text">Наш набор данных упрощает для корпоративных организаций доступ к общедоступным и премиальным наборам данных, улучшая их пространственный анализ с помощью таких данных, как точки интереса, мобильность людей, транзакции по кредитным картам и многое другое.</p>
+    <div class="swiper swiper1">
+        <ul class="swip-carousel swiper-wrapper">
+            <!-- 1 -->
+            <li class="swip-carousel__item swiper-slide">
+                <div class="swip-carousel__item-wrapper">
+                    <img class="swip-carousel-item__bg" src="./img/access/human.png" alt="">
+                    <div class="swip-carousel-item__circle">
+                        <img class="swip-carousel-item__ico" src="./img/icons/category/finance-book.svg" alt="">
+                    </div>
+                    <h3 class="swip-carousel-item__title">
+                        <a class="swip-carousel-item__link" href="">Финансы</a>
+                    </h3>
+                </div>
+            </li>
+            <!-- 2 -->
+            <li class="swip-carousel__item swiper-slide">
+                <div class="swip-carousel__item-wrapper">
+                    <img class="swip-carousel-item__bg" src="./img/access/human.png" alt="">
+                    <div class="swip-carousel-item__circle">
+                        <img class="swip-carousel-item__ico" src="./img/icons/category/users.svg" alt="">
+                    </div>
+                    <h3 class="swip-carousel-item__title">
+                        <a class="swip-carousel-item__link" href="">Мобильность</a>
+                    </h3>
+                </div>
+            </li>
+            <!-- 3 -->
+            <li class="swip-carousel__item swiper-slide">
+                <div class="swip-carousel__item-wrapper">
+                    <img class="swip-carousel-item__bg" src="./img/access/demogr.png" alt="">
+                    <div class="swip-carousel-item__circle">
+                        <img class="swip-carousel-item__ico" src="./img/icons/category/user.svg" alt="">
+                    </div>
+                    <h3 class="swip-carousel-item__title">
+                        <a class="swip-carousel-item__link" href="">Демография</a>
+                    </h3>
+                </div>
+            </li>
+            <!-- 4 -->
+            <li class="swip-carousel__item swiper-slide">
+                <div class="swip-carousel__item-wrapper">
+                    <img class="swip-carousel-item__bg" src="./img/access/home.png" alt="">
+                    <div class="swip-carousel-item__circle">
+                        <img class="swip-carousel-item__ico" src="./img/icons/category/house.svg" alt="">
+                    </div>
+                    <h3 class="swip-carousel-item__title">
+                        <a class="swip-carousel-item__link" href="">Жилье</a>
+                    </h3>
+                </div>
+            </li>
+            <!-- 5 -->
+            <li class="swip-carousel__item swiper-slide">
+                <div class="swip-carousel__item-wrapper">
+                    <img class="swip-carousel-item__bg" src="./img/access/road.png" alt="">
+                    <div class="swip-carousel-item__circle">
+                        <img class="swip-carousel-item__ico" src="./img/icons/category/road.svg" alt="">
+                    </div>
+                    <h3 class="swip-carousel-item__title">
+                        <a class="swip-carousel-item__link" href="">Дорожное движение</a>
+                    </h3>
+                </div>
+            </li>
+            <!-- 6 -->
+            <li class="swip-carousel__item swiper-slide">
+                <div class="swip-carousel__item-wrapper">
+                    <img class="swip-carousel-item__bg" src="./img/access/demogr.png" alt="">
+                    <div class="swip-carousel-item__circle">
+                        <img class="swip-carousel-item__ico" src="./img/icons/category/folder.svg" alt="">
+                    </div>
+                    <h3 class="swip-carousel-item__title">
+                        <a class="swip-carousel-item__link" href="">Точки интереса</a>
+                    </h3>
+                </div>
+            </li>
+            <!-- 7 -->
+            <li class="swip-carousel__item swiper-slide">
+                <div class="swip-carousel__item-wrapper">
+                    <img class="swip-carousel-item__bg" src="./img/access/demogr.png" alt="">
+                    <div class="swip-carousel-item__circle">
+                        <img class="swip-carousel-item__ico" src="./img/icons/category/world.svg" alt="">
+                    </div>
+                    <h3 class="swip-carousel-item__title">
+                        <a class="swip-carousel-item__link" href="">Географии</a>
+                    </h3>
+                </div>
+            </li>
+            <!-- 8 -->
+            <li class="swip-carousel__item swiper-slide">
+                <div class="swip-carousel__item-wrapper">
+                    <img class="swip-carousel-item__bg" src="./img/access/demogr.png" alt="">
+                    <div class="swip-carousel-item__circle">
+                        <img class="swip-carousel-item__ico" src="./img/icons/category/ecology.svg" alt="">
+                    </div>
+                    <h3 class="swip-carousel-item__title">
+                        <a class="swip-carousel-item__link" href="">Окружающая среда</a>
+                    </h3>
+                </div>
+            </li>
+            <!-- 9 -->
+            <li class="swip-carousel__item swiper-slide">
+                <div class="swip-carousel__item-wrapper">
+                    <img class="swip-carousel-item__bg" src="./img/access/demogr.png" alt="">
+                    <div class="swip-carousel-item__circle">
+                        <img class="swip-carousel-item__ico" src="./img/icons/category/share.svg" alt="">
+                    </div>
+                    <h3 class="swip-carousel-item__title">
+                        <a class="swip-carousel-item__link" href="">Поведенческий</a>
+                    </h3>
+                </div>
+            </li>
+            <!-- 10 -->
+            <li class="swip-carousel__item swiper-slide">
+                <div class="swip-carousel__item-wrapper">
+                    <img class="swip-carousel-item__bg" src="./img/access/demogr.png" alt="">
+                    <div class="swip-carousel-item__circle">
+                        <img class="swip-carousel-item__ico" src="./img/icons/category/big-data.svg" alt="">
+                    </div>
+                    <h3 class="swip-carousel-item__title">
+                        <a class="swip-carousel-item__link" href="">Производные наборы данных</a>
+                    </h3>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <a class="swip-access__btn btn btn_yellow" href="https://epsilonmetrics.ru/data-catalog/">
+        <span>Изучить данные</span>
+    </a>
+</section>
+
+
+<!-------------- COMMUNITY -------------->
+
+<section class="community">
+    <div class="container">
+        <div class="community__content">
+            <h2 class="community__title">Присоединяйтесь к сообществу</h2>
+            <ul class="blog__list">
+                <!-- 1 -->
+                <li class="blog__item">
+                    <img class="blog-item__img" src="./img/community/1.png" alt="">
+                    <h5 class="blog-item__subtitle">Блог</h5>
+                    <h3 class="blog-item__title">Логистика и цепи поставок в жанре магического реализма</h3>
+                    <p class="blog-item__text">В предыдущей статье я описала применение технологий locationintelligence для определения оптимального месторасположения дарксторов. В следующей – опишу вторую ключевую часть логистики последней мили - решений для планирования оптимальных маршрутов курьеров с учётом пробок и других данных.</p>
+                    <a class="community__btn btn btn_inline" href="https://epsilonmetrics.ru/blog/logistics-supply-chain/">
+                        <span>Читать далее</span>
+                    </a>
+                </li>
+                <!-- 2 -->
+                <li class="blog__item">
+                    <img class="blog-item__img" src="./img/community/2.png" alt="">
+                    <h5 class="blog-item__subtitle">Блог</h5>
+                    <h3 class="blog-item__title">Location Intelligence</h3>
+                    <p class="blog-item__text">Направление «Location Intelligence» не назовешь новым или инновационным. Технология появилась на кривой «Gartner HypeCycleof Emerging Technologies» в далёком 2013-м году. Его старшие родственники BI и геоинформационные системы (ГИСы) тоже широко используются уже не первый десяток лет. В военно-промышленном комплексе технологии LI активно использовались и того раньше.</p>
+                    <a class="community__btn btn btn_inline" href="https://epsilonmetrics.ru/blog/Location-Intelligence/">
+                        <span>Читать далее</span>
+                    </a>
+                </li>
+                <!-- 3 -->
+                <li class="blog__item">
+                    <img class="blog-item__img" src="./img/community/3.png" alt="">
+                    <h5 class="blog-item__subtitle">Блог</h5>
+                    <h3 class="blog-item__title">Как Location Intelligence поможет определить, где разместить дарксторы</h3>
+                    <p class="blog-item__text">В Москве за 15 минут привезут заказ из Яндекс. Лавки или Самоката, маркетплейсы и крупные интернет-магазины научились делать экспресс-доставку в течение часа (используя свои собственные или партнерские курьерские или транспортно-логистические службы). Доставка в день заказа в заданный часовой интервал и подавно стала новой нормой онлайн ритейла.</p>
+                    <a class="community__btn btn btn_inline" href="https://epsilonmetrics.ru/blog/dark-store/">
+                        <span>Читать далее</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-------------- FEEDBACK -------------->
+
+<!-- <section class="feedback">
+    <div class="container">
+        <div class="feedback__content">
+            <h4 class="feedback__subtitle">Поговорите с нами</h4>
+            <h2 class="feedback__title">Запросить демонстрацию</h2>
+            <form
+                class="form-feedback"
+                action="https://epsilonmetrics.ru/request-live-demo/"
+                method="post"
+                accept-charset="UTF-8"
+                name="form-feedback"
+                id="form-feedback"
+                novalidate
+            >
+                <fieldset class="form-fieldset" form="form-feedback">
+                    <div class="input-group input-group_small">
+                        <input class="input-group__input" type="text" name="firstname" id="firstname" form="form-feedback" placeholder=" " required>
+                        <label class="input-group__label" for="firstname">Имя</label>
+                    </div>
+                    <div class="input-group input-group_small">
+                        <input class="input-group__input" type="text" name="lastname" id="lastname" form="form-feedback" placeholder=" " required>
+                        <label class="input-group__label" for="lastname">Фамилия</label>
+                    </div>
+                    <div class="input-group">
+                        <input class="input-group__input" type="text" name="company" id="company" form="form-feedback" placeholder=" " required>
+                        <label class="input-group__label" for="company">Организация</label>
+                    </div>
+                    <div class="input-group">
+                        <select class="input-group__input input-group__select" name="role" id="role" form="form-feedback">
+                            <option disabled selected>Выбрать...</option>
+                            <option class="select__item" value="businessUser">Бизнес-пользователь</option>
+                            <option class="select__item" value="director">Директор</option>
+                            <option class="select__item" value="engineer">Инженер</option>
+                        </select>
+                        <div class="arrow-select"></div>
+                        <label class="input-group__label" for="role">Ваша роль в организации?</label>
+                    </div>
+                </fieldset>
+                <fieldset class="form-fieldset" form="form-feedback">
+                    <div class="input-group">
+                        <input class="input-group__input" type="email" name="email" id="email" form="form-feedback" placeholder=" " required>
+                        <label class="input-group__label" for="email">Корпоративная почта</label>
+                    </div>
+                    <div class="input-group">
+                        <select class="input-group__input input-group__select" name="employees" id="employees" form="form-feedback" required>
+                            <option disabled selected>Выбрать...</option>
+                            <option class="select__item" value="1-5">1-5</option>
+                            <option class="select__item" value="5-25">5-25</option>
+                            <option class="select__item" value="25-50">25-50</option>
+                            <option class="select__item" value="50-100">50-100</option>
+                            <option class="select__item" value="100-500">100-500</option>
+                            <option class="select__item" value="500-1.000">500-1.000</option>
+                            <option class="select__item" value="1.000-10.000">1.000-10.000</option>
+                            <option class="select__item" value="10.000-100.000">10.000-100.000</option>
+                            <option class="select__item" value="100.000+">100.000+</option>
+                        </select>
+                        <div class="arrow-select"></div>
+                        <label class="input-group__label" for="employees">Численность персонала</label>
+                    </div>
+                    <div class="input-group input-group_mb">
+                        <input class="input-group__checkbox" type="checkbox" name="subscription" id="subscription" form="form-feedback">
+                        <label class="input-group__label_text" for="subscription">Да, я хотел бы получать маркетинговые сообщения о продуктах, услугах и мероприятиях Epsilon Metrics. Я могу отписаться в любой момент.</label>
+                    </div>
+                    <p class="form-feedback__text">Регистрируясь, я подтверждаю, что мои личные данные будут обрабатываться в соответствии с Соглашением о конфиденциальности.</p>
+                    <button class="form-feedback__btn btn btn_yellow" type="submit">
+                        <span>Запросить демонстрацию</span>
+                    </button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</section> -->
+
+<!-------------- CONTACT US -------------->
+
+<section class="contact">
+    <div class="container">
+        <div class="contact__wrapper">
+            <span class="contact__text">Готовы увидеть, как это может работать для вашей организации?</span>
+            <a class="contact__btn btn btn_yellow" href="https://epsilonmetrics.ru/request-live-demo/">
+                <span>Свяжитесь с нами</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-------------- FOOTER -------------->
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <div class="footer__logo">
+                <a class="f-logo__main" href="https://epsilonmetrics.ru/">
+                    <img  src="./img/footer/logo_footer.png" alt="logo">
+                </a>
+                <p class="f-logo__text">Участник</p>
+                <a class="f-logo__cluster" href="https://i.moscow/">
+                    <img src="./img/footer/moscow_cluster.png" alt="moscow_cluster">
+                </a>
+            </div>
+            <div class="footer__menu">
+                <div class="f-menu__item">
+                    <h4 class="f-item__title">Платформа</h4>
+                    <ul class="f-item__list">
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/platform/">Технология</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/data-catalog/ ">Данные</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/services/">Сервисы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f-menu__item">
+                    <h4 class="f-item__title">Документация</h4>
+                    <ul class="f-item__list">
+                        <li class="f-item">
+                            <a href="https://docs.epsilonmetrics.ru/">Документация</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://docs.epsilonmetrics.ru/tutorials/">Методические рекомендации</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f-menu__item">
+                    <h4 class="f-item__title">Решения</h4>
+                    <h5 class="f-item__subtitle">По отрасли</h5>
+                    <ul class="f-item__list">
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/industries/cities-government/">Города и правительство</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/industries/marketing-and-advertising/">Маркетинг и реклама</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/industries/financial-services/">Финансовые услуги</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/industries/real-estate/">Недвижимость</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/industries/consumer-goods/">Потребительские товары</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/industries/retail/">Розничная торговля</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/industries/environmental-and-natural-resources/">Окружающая среда</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/industries/telecommunications/">Телекоммуникации</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/industries/healthcare-and-pharma/">Здоровье и фармацевтика</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/industries/transport/">Транспорт</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/industries/logistics/">Логистика</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/industries/utilities/">Коммунальные услуги</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f-menu__item">
+                    <h4 class="f-item__title">&nbsp;</h4>
+                    <h5 class="f-item__subtitle">По сценарию<br>использования</h5>
+                    <ul class="f-item__list">
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/solutions/site-selection/">Выбор площадки</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/solutions/geomarketing/">Геомаркетинг</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/solutions/supply-chain-optimization/">Оптимизация цепочек поставок</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/solutions/catastrophe-modeling/">Моделирование катастроф</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/solutions/data-monetization/">Монетизация данных</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/solutions/environmental-management/">Управление окружающей средой</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/solutions/fraud-detection/">Обнаружение мошенничества</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/solutions/healthcare-analytics/">Медицинская аналитика</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/solutions/indoor-mapping/">Картографирование помещений</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/solutions/iot-analytics/">Аналитика интернета вещей</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/solutions/network-deployment/">Развертывание сети</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/solutions/territory-planning/">Планировка территории</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/solutions/real-estate-market-analysis/">Анализ рынка недвижимости</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f-menu__item">
+                    <h4 class="f-item__title">О компании</h4>
+                    <ul class="f-item__list">
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/blog/">Блог</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/customer-stories/">Истории клиентов</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/careers/">Карьера</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/about-us/">О нас</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="https://epsilonmetrics.ru/partners/">Партнерам</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Пользовательское соглашение</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Политика конфиденциальности</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container">
+            <div class="f-bottom__content">
+                <span class="f-bottom__copyright">@ Epsilon Metrics 2022</span>
+                <span class="f-bottom__slogan">Превращаем геоданные в умные идеи!</span>
+                <a class="social__link" href="https://vk.com/epsilonmetrics">
+                    <img class="social__vk" src="./img/icons/social/vk.svg" alt="VK">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/menu-tabs.js"></script>
+<script src="./js/burger.js"></script>
+<script src="./js/slider.js"></script>
+<script src="./js/app.js"></script>
+</body>
+
+</html>
