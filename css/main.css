@@ -11,7 +11,10 @@
 .bg-full__indevelopment{
 	background: url(../img/indevelopment__bg.png) center/cover no-repeat;
 }
-.bg-full__indevelopment .header.header-indevelopment:before{display:none}
+.bg-full__indevelopment .header.header-indevelopment:before{
+  display:none
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -279,7 +282,7 @@
 }
 
 .tab__link.active {
-  border-bottom-color: #ffd335;
+  border-bottom-color: #F29849;
 }
 
 .tab__link:not(.active):hover {
@@ -296,6 +299,7 @@
   font-size: 14px;
   line-height: 19px;
   color: var(--color-btn);
+  text-align: left;
   padding: 0;
   border-radius: 0;
   background-color: transparent;
@@ -428,7 +432,7 @@
 }
 
 .header__btn > span {
-  text-align: left;
+  text-align: center;
   margin-left: 3px;
   letter-spacing: -0.015em;
 }
@@ -592,7 +596,7 @@
 
 .slide__logo {
   width: 222px;
-  margin-top: -25px;
+  /* margin-top: -25px; */
 }
 @media (max-width: 992px) {
   .slide__logo {
@@ -729,6 +733,12 @@
   transition: transform 0.3s;
 }
 
+.pagination__arrow.disable {
+  opacity: 0.35;
+  cursor: default;
+  pointer-events: none;
+}
+
 .arrow__left {
   margin-right: 12px;
 }
@@ -757,6 +767,8 @@
   color: #777777;
 }
 
+
+/* SLIDER-SWIPER */
 
 ._arrows {
   position: relative;
@@ -1298,9 +1310,9 @@
   color: #FFFFFF;
 }
 
-.swip-carousel-item__link:hover {
+/* .swip-carousel-item__link:hover {
   text-decoration: underline;
-}
+} */
 
 .swip-access__btn {
   display: block;
@@ -1383,7 +1395,8 @@
   justify-content: space-between;
   flex-wrap: nowrap;
   width: 100%;
-  height: 560px;
+  /* height: 560px; */
+  height: auto;
   margin-top: 30px;
 }
 @media (max-width: 992px) {
@@ -1440,7 +1453,6 @@
   color: #222222;
   margin-top: 6px;
   margin-bottom: 6px;
-  max-height: 48px;
   overflow: hidden;
 }
 
@@ -1448,8 +1460,8 @@
   line-height: 24px;
   letter-spacing: -0.01em;
   color: #595959;
-  max-height: 220px;
   overflow: hidden;
+  margin-bottom: 12px;
 }
 @media (max-width: 768px) {
   .blog-item__text {
@@ -1465,7 +1477,7 @@
 }
 
 .community__btn {
-  color: #FFD335;
+  color: #F29849;
   margin-top: auto;
 }
 
@@ -1475,7 +1487,7 @@
 
 .community__btn > span::before {
   height: 1px;
-  background-color: #FFD335;
+  background-color: #F29849;
 }
 
 .community__btn > span:after {
@@ -1706,12 +1718,12 @@
 
 /* при наведении курсора */
 .input-group__checkbox:not(:disabled):not(:checked) + .input-group__label_text:hover::before {
-  border-color: #FFC235;
+  border-color: #F29849;
 }
 /* для активного состояния */
 .input-group__checkbox:not(:disabled):active + .input-group__label_text::before {
-  background-color: #ffc235;
-  border-color: #FFC235;
+  background-color: #F29849;
+  border-color: #F29849;
 }
 /* в фокусе */
 .input-group__checkbox:focus+.input-group__label_text::before {
@@ -1719,7 +1731,7 @@
 }
 /* в фокусе и не в состоянии checked */
 .input-group__checkbox:focus:not(:checked) + .input-group__label_text::before {
-  border-color: #FFC235;
+  border-color: #F29849;
 }
 /* в состоянии disabled */
 .input-group__checkbox:disabled + .input-group__label_text::before {
@@ -1850,7 +1862,7 @@
 
 @media (max-width: 480px) {
   .footer__content {
-    height: 1030px;
+    height: 1050px;
   }
 }
 @media (max-width: 400px) {
