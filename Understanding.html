@@ -1,0 +1,63 @@
+# Understanding the Category Widget
+
+Filter and search category values with category widgets in CARTO Builder.
+
+This guide describes how to use category widgets to filter by selected string columns from your data. Like all widgets, category widgets are data-driven. Only the most relevant categories of data are displayed, based on your Map View. As you zoom or pan the map, the category widget filters change.
+
+When creating a category widget, you configure the widget values by an aggregated data column and define the operation of how the columns are selected. This groups data into “categories”.
+
+## Filtering Values by Category
+
+You can select one or more values from a category widget to highlight particular columns of interest.
+
+1. Import the template .carto file packaged from the “Download resources” section of this guide and create the map. Builder opens with US Counties as the first map layer and Railroad Accidents as the second map layer.
+    
+    Click on “Download resources” from this guide to download the zip file to your local machine. Extract the zip file to view the .carto file(s) used for this guide.
+    
+2. Ensure that your Map View is zoomed to level 4, and that [auto style](https://carto.com/help/building-maps/auto-style-to-view-dynamic-data) is applied to the Railroad Companies widget.
+    
+3. Click on the top two railroad companies, _UP_ (Union Pacific) and _BNSF_ (Burlington North Santa Fe).
+    
+    Any time that you filter a widget connected to a layer that contains analyses, the [analysis](https://carto.com/help/building-maps/analysis-tips-and-behavior#analysis-limits) is rerun and recalculated!
+    
+    ![Selected columns from a category widget](/help/images/building-maps/search-and-filter-category-values/filtered_categories.png)
+    
+    Only the selected filters appear styled on your map, and the rest of the categories are temporarily removed from your visualization.
+    
+4. Click on the same filters again to deselect them, or click _ALL_ to show all relevant categories from the widget again.
+    
+
+## Search for Other Values in a Category Widget
+
+The OTHER filter (from a category widget) groups together the less relevant values that may not be visible from your Map View. You can manually search for values from the OTHER category, which can help you re-evaluate how your Map View should appear.
+
+For example, suppose that I am doing a risk analysis of New Jersey Transit (NJTR) and Metro-North Railroad Company (MNCW) but they are not visible in my category widget. I can manually search for these values and apply them to my category widget.
+
+1. Since _Auto style_ only styles the most relevant values of your visualization, remove it and use the default styling applied to the map instead.
+    
+2. To filter by a less relevant value, click _SEARCH IN # CATEGORIES_.
+    
+    ![Search in other categories](/help/images/building-maps/search-and-filter-category-values/search_in_categories.png)
+    
+3. Click the box next to the other value(s) to be included. You can type a value, or search through the list of available values.
+    
+    ![Apply selected categories from OTHER widget filters](/help/images/building-maps/search-and-filter-category-values/apply_categories.png)
+    
+4. Click _APPLY_ to filter the category widget by the selected values.
+    
+    You can zoom or pan your map to the filtered location, or click _UNLOCK_ from the Railroad Companies widget to view the default categories again.
+    
+    Optionally, apply _Auto style_ to help visualize the difference between the two railroad companies.
+    
+    ![Other filters added to category widget](/help/images/building-maps/search-and-filter-category-values/categories_added.png)
+    
+
+## Category Widget Filters
+
+The filters that appear in your widget are data-driven. Category widgets display the top five categories of data, based on the Map View of your visualization. Starting from the 6th value in the category widget, Builder applies _OTHER_ for the remaining category values.
+
+- You can use the [_Search_](https://carto.com/help/tutorials/understanding-the-category-widget/#search-for-other-values-in-a-category-widget) functionality to search and filter other category values.
+
+Or
+
+- Modify the order of how values appear in the category widget. As you zoom or pan the map, the category widget filters change.
